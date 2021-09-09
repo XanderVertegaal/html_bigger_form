@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactformulier</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contactformulier nieuwe recepten</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Deelnemende chefs</a></li>
+                <li class="selected"><a href="#">Recepten indienen</a></li>
+                <li><a href="#">Receptenboek</a></li>
+                <li><a href="#">Over ons</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <p>Vul hieronder je gegevens in. Dan plaatsen we je recept op onze website.</p>
+            <form name="contact" method="POST" data-netlify="true">
+                <p>
+                    <label>Naam:
+                        <input type="text" name="naam" placeholder="e.g. Jan Steen">
+                    </label>
+                </p>
+
+                <p>
+                    <label>E-mailadres:
+                        <input type="email" name="e-mail" placeholder="e.g. jansteen@hotmail.com">
+                    </label>
+                </p>
+
+                <p>
+                    <label>Telefoonnummer:
+                        <input type="tel" name="telnr">
+                    </label>
+                </p>
+
+                <p>
+                    <label>Leeftijd:
+                        <input type="number" name="leeftijd">
+                    </label>
+                </p>
+
+                <p>
+                    <label>Geboortedatum:
+                        <input type="date" name="geboortedatum">
+                    </label>
+                </p>
+
+                <p>Geslacht:
+                    <label>
+                        <input type="radio" name="gender" value="man"> Man
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="vrouw"> Vrouw
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="intersekse"> Intersekse
+                    </label>
+                </p>
+
+                <p>Favoriete keuken:
+                    <label>
+                        <input type="checkbox" name="frans"> Frans
+                    </label>
+                    <label>
+                        <input type="checkbox" name="italiaans"> Italiaans
+                    </label>
+                    <label>
+                        <input type="checkbox" name="spaans"> Spaans
+                    </label>
+                    <label>
+                        <input type="checkbox" name="arabisch"> Arabisch
+                    </label>
+                </p>
+
+                <p>
+                    <label>Favoriete kleur schort:
+                        <input type="color" name="kleur">
+                    </label>
+                </p>
+
+                <p>
+                    <label>Biografie: <textarea name="biografie" cols="30" rows="10"></textarea>
+                    </label>
+                </p>
+
+                <p>
+                    <label>Upload je recept:
+                        <input type="file" name="receptbestand">
+                    </label>
+                </p>
+
+                <p>
+                    <label>URL van je eigen receptenwebsite:
+                        <input type="url" name="url">
+                    </label>
+                </p>
+
+                <p>
+                    <input type="reset" value="Reset">
+                </p>
+
+                <p>
+                    <input type="submit" value="Verstuur">
+                </p>
+            </form>
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
